@@ -1,6 +1,9 @@
 var langTools = ace.require("ace/ext/language_tools");
 var editor = ace.edit("code");
 editor.setTheme("ace/theme/monokai");
+var beautify;
+var Range;
+var customCompleter
 
 function setupAceEditor()
 {
@@ -17,8 +20,8 @@ editor.setOptions({
   enableLiveAutocompletion: true,
 });
 
-var beautify = ace.require("ace/ext/beautify"); // get reference to extension
-var Range = ace.require("ace/range").Range;
+ beautify = ace.require("ace/ext/beautify"); // get reference to extension
+ Range = ace.require("ace/range").Range;
 
 // Define your keywords
 const keywords = [
@@ -56,7 +59,7 @@ if (!showDSLVersion) {
 }
 
 // Create a completer
-var customCompleter = {
+ customCompleter = {
   getCompletions: function (editor, session, pos, prefix, callback) {
     var wordList = keywords; // Use your keyword list
     callback(
