@@ -1,6 +1,9 @@
 var langTools = ace.require("ace/ext/language_tools");
 var editor = ace.edit("code");
 editor.setTheme("ace/theme/monokai");
+
+function setupAceEditor()
+{
 if (!showDSLVersion) {
   editor.getSession().setMode("ace/mode/javascript");
 } else {
@@ -72,7 +75,7 @@ var customCompleter = {
 // Add the completer to the editor
 langTools.setCompleters([customCompleter]);
 //   ace.require("ace/ext/language_tools").addCompleter(customCompleter);
-
+}
 
 // Add copy event listener
 editor.textInput.getElement().addEventListener("copy", function (event) {
