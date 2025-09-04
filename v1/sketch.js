@@ -59,6 +59,10 @@ let hideControl = false;
 
 // Load the image and create a p5.Image object.
 function preload() {
+   if (getUrlParam("type") !=null && getUrlParam("type") == "dsl")
+   {
+     showDSLVersion = true;
+   }
   imgGuideJS = loadImage("guideJS.png");
 
   myFont = loadFont(base64Font); // load a font via base64?!
