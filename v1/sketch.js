@@ -59,16 +59,19 @@ let hideControl = false;
 
 // Load the image and create a p5.Image object.
 function preload() {
-   if (getUrlParam("type") !=null && getUrlParam("type") == "dsl")
-   {
-     showDSLVersion = true;
-   }
+ 
   imgGuideJS = loadImage("guideJS.png");
 
   myFont = loadFont(base64Font); // load a font via base64?!
 }
 
 function setup() {
+  
+   if (getUrlParam("type") !=null && getUrlParam("type") == "dsl")
+   {
+     showDSLVersion = true;
+   }
+  setupAceEditor();
   mySessions = new LSessions();
 
   noStroke();
@@ -542,4 +545,9 @@ function clearLog() {
   consoleDiv = document.querySelector("#consoleContent");
 
   consoleDiv.innerHTML = consoleLog.slice().reverse().join("<br>\n");
+}
+
+function getUrlParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
 }
