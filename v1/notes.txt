@@ -1,0 +1,59 @@
+// proof of concept:
+1. Get langium CDN working https://www.jsdelivr.com/package/npm/langium
+2. Get a schema / compile up and running
+3. Get ace editor integrated with
+3.A Syntax highlight
+3.B Keywords / Content assist
+3.C Linter? Validation Schema? / error handling
+
+Plan:
+A: Langium - https://langium.org/
+B: antlr - https://github.com/antlr/antlr4/blob/master/doc/javascript-target.md
+B: cucumber - http://cucumber.io/
+C: Hack existing
+D: xtext
+
+Ace editor things to look at:
+- mode creator: https://ace.c9.io/tool/mode_creator.html
+- Validation (json example): https://mkslanc.github.io/ace-playground/#validation-against-json-schema
+
+https://github.com/antlr/antlr4/blob/master/doc/javascript-target.md
+
+https://eclipse.dev/Xtext/documentation/330_web_support.html
+https://github.com/eclipse-archived/xtext-web?tab=readme-ov-file
+https://www.typefox.io/blog/xtext-to-langium/
+
+https://mkslanc.github.io/ace-playground/#validation-against-json-schema
+
+https://github.com/Anahide-Vanian?tab=repositories
+
+https://ace.c9.io/tool/mode_creator.html
+
+
+https://stackoverflow.com/questions/5198798/bdd-framework-for-the-frontend
+https://langium.org/
+https://github.com/ajaxorg/treehugger?tab=readme-ov-file
+https://github.com/gherking/gherkin-ast?tab=readme-ov-file
+https://github.com/jquery/esprima
+https://github.com/jamiebuilds/the-super-tiny-compiler/blob/master/the-super-tiny-compiler.js
+https://blog.mgechev.com/2017/09/16/developing-simple-interpreter-transpiler-compiler-tutorial/
+https://github.com/parallax/jsPDF
+https://pdfkit.org/
+http://www.cloudformatter.com/CSS2Pdf
+https://zenozeng.github.io/p5.js-svg/examples/#dataurl
+https://github.com/ajaxorg/ace/wiki/Syntax-validation
+https://mkslanc.github.io/ace-playground/#validation-against-json-schema
+https://github.com/muhqu/go-gherkin/blob/master/gherkin.peg
+Packrat Parsing Expression - https://github.com/pegjs/pegjs
+https://github.com/jsdw/angu
+https://chevrotain.io/docs/
+https://github.com/salsify/botanist
+https://github.com/peggyjs/peggy
+1
+https://github.com/ajaxorg/ace/wiki/Creating-or-Extending-an-Edit-Mode
+https://github.com/SmartBear/react-gherkin-editor/blob/master/src/modules/mode/gherkin_scenario_i18n.js
+For the copy/cut operation try using getCopyText function, which copies the text that has been selected.
+
+var copiedText = editor.getCopyText()
+https://ace.c9.io/api/classes/src_editor.Editor.html#onCopy
+https://www.jsdelivr.com/package/npm/gherkin-lint
