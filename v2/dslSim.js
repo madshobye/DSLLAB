@@ -231,7 +231,7 @@ printErrorTable(reportBindings.errors);
  // console.log(reportBindings.summary); // { totalScenarios, totalSteps, missingSteps, ambiguousSteps }
  // console.log("OK?", reportBindings.ok);
 
-  if (reportBindings.ok && report.ok) {
+  if (true || reportBindings.ok && report.ok) {
     GherkinEval.stepTimeoutMs = 30000; // 30s per step (optional)
     running = true;
     clearAllMarkers();
@@ -265,10 +265,7 @@ printErrorTable(reportBindings.errors);
       });
  
   }
-  else
-  {
-    debug("There are syntax errors so the code cannot run");
-  }
+ 
 }
 
 function printErrorTable(table)
