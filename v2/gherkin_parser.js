@@ -815,7 +815,7 @@
           } else if (st.argument?.type === "DataTable") {
             cst.argument.rows = st.argument.rows.map((r) => ({
               ...r,
-              cells: r.cells.map((cell) => interpolate(cell, map)), 
+              cells: r.cells.map((cell) => interpolate(cell, map)),
             }));
           }
           return cst;
