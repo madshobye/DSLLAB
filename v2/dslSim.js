@@ -279,7 +279,7 @@ function printErrorTable(table)
     else
       msg = table[i].message;
     
-  debug("L " + table[i].line + ": " + table[i].hint );
+  debug("L " + table[i].line + ": " + table[i].hint,true );
   }
   
 }
