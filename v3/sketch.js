@@ -59,7 +59,7 @@ let hideControl = false;
 // Load the image and create a p5.Image object.
 function preload() {
   imgGuideJS = loadImage("guideJS-1.png");
-imgGuideDSL = loadImage("guideDSL-4.png");
+imgGuideDSL = loadImage("guideDSL-5.png");
   myFont = loadFont(base64Font); // load a font via base64?!
 }
 
