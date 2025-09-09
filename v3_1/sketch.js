@@ -563,7 +563,7 @@ function addToConsole(msg) {
   consoleDiv = document.querySelector("#consoleContent");
   consoleDiv.innerHTML = consoleLog.slice().reverse().join("<br>\n");
 }
-
+ 
 function clearLog() {
   consoleLog = [];
   consoleDiv = document.querySelector("#consoleContent");
