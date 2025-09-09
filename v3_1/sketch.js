@@ -67,6 +67,10 @@ function setup() {
   if (getUrlParam("type") != null && getUrlParam("type") == "dsl") {
     showDSLVersion = true;
   }
+  else if (getUrlParam("type") != null && getUrlParam("type") == "js")
+  {
+     showDSLVersion = false;
+  }
   setupAceEditor();
   mySessions = new LSessions();
 
