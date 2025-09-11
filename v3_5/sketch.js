@@ -538,7 +538,7 @@ function keyPressed() {
     if (key === "a" || key === "A") {
       hideAdmin = !hideAdmin;
     }
-    if (key === "c" || key === "C") {
+    if (key === "n" || key === "n") {
       hideControl = !hideControl;
     }
   }
